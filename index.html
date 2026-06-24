@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Garna for Creators</title>
+  <meta name="description" content="Creator payouts from global platforms, guided by Garna." />
+  <meta name="theme-color" content="#070807" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-glow" aria-hidden="true"></div>
+
+  <header class="site-header" id="top">
+    <div class="nav-shell">
+      <a class="logo" href="#top" aria-label="Garna home">garna</a>
+
+      <nav class="main-nav" aria-label="Primary navigation">
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#platforms" data-i18n="nav.platforms">Platforms</a>
+        <a href="#fees" data-i18n="nav.fees">Fees</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+
+      <div class="nav-actions">
+        <div class="lang-switch" aria-label="Language switcher">
+          <button class="lang-btn is-active" type="button" data-lang="en">EN</button>
+          <button class="lang-btn" type="button" data-lang="ru">RU</button>
+        </div>
+        <a class="btn btn-small btn-primary nav-cta" href="https://app.garna.io/auth/sign-up" target="_blank" rel="noopener" data-i18n="cta.create">Create Garna Account</a>
+        <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <div class="mobile-nav" hidden>
+      <a href="#how" data-i18n="nav.how">How it works</a>
+      <a href="#platforms" data-i18n="nav.platforms">Platforms</a>
+      <a href="#fees" data-i18n="nav.fees">Fees</a>
+      <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      <a class="btn btn-primary" href="https://app.garna.io/auth/sign-up" target="_blank" rel="noopener" data-i18n="cta.create">Create Garna Account</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <div class="eyebrow">
+            <span class="dot"></span>
+            <span data-i18n="hero.eyebrow">Early Access for selected creators</span>
+          </div>
+          <h1 data-i18n="hero.title">Creator payouts from global platforms, guided by Garna</h1>
+          <p class="lead" data-i18n="hero.subtitle">Receive payouts from creator platforms, stock marketplaces, freelance services and digital product platforms through one Garna account.</p>
+          <p class="hero-note" data-i18n="hero.note">We’ll guide you through the first setup, help you understand which payout method fits your platform, and support you during your first withdrawals.</p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="https://app.garna.io/auth/sign-up" target="_blank" rel="noopener" data-i18n="cta.create">Create Garna Account</a>
+            <a class="btn btn-secondary" href="https://t.me/likelyIam" target="_blank" rel="noopener" data-i18n="cta.manager">Contact Payout Manager</a>
+          </div>
+          <p class="microcopy" data-i18n="hero.micro">Early Access is available for selected creators and platforms.</p>
+        </div>
+
+        <div class="hero-visual reveal delay-1" aria-label="Garna creator payout flow preview">
+          <div class="flow-card main-flow">
+            <div class="flow-head">
+              <div>
+                <span class="muted-label" data-i18n="visual.cardLabel">Incoming payout</span>
+                <strong>Envato</strong>
+              </div>
+              <span class="status-pill" data-i18n="visual.matched">Matched</span>
+            </div>
+            <div class="amount-row">
+              <span>$2,840.00</span>
+              <span class="amount-tag">USD</span>
+            </div>
+            <div class="progress-line"><span></span></div>
+            <div class="flow-meta">
+              <span data-i18n="visual.invoice">Invoice verified</span>
+              <span data-i18n="visual.balance">Garna balance</span>
+            </div>
+          </div>
+
+          <div class="mini-grid">
+            <div class="mini-card">
+              <span class="mini-icon">✓</span>
+              <strong data-i18n="visual.kyc">KYC</strong>
+              <p data-i18n="visual.kycText">1–2 business days</p>
+            </div>
+            <div class="mini-card">
+              <span class="mini-icon">↗</span>
+              <strong data-i18n="visual.withdraw">Withdraw</strong>
+              <p data-i18n="visual.withdrawText">Bank, card, crypto</p>
+            </div>
+          </div>
+
+          <div class="orbit orbit-a">PayPal</div>
+          <div class="orbit orbit-b">ACH</div>
+          <div class="orbit orbit-c">Payoneer</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="transition-banner" id="transitionBanner" hidden>
+      <div class="container">
+        <div class="transition-card reveal">
+          <div>
+            <span class="section-kicker" data-i18n="transition.kicker">Partner transition</span>
+            <h2 data-i18n="transition.title">Moving your payout setup to Garna?</h2>
+            <p data-i18n="transition.text">You were invited to Garna through one of our partners. Our team will help you move your payout setup step by step, so you can continue receiving creator payouts with less friction.</p>
+          </div>
+          <a class="btn btn-primary" href="https://t.me/likelyIam" target="_blank" rel="noopener" data-i18n="cta.manager">Contact Payout Manager</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad compact" id="who">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="who.kicker">Who it’s for</span>
+          <h2 data-i18n="who.title">Built for creators who earn globally</h2>
+          <p data-i18n="who.text">Garna can help creators, freelancers and digital sellers who receive income from international platforms.</p>
+        </div>
+
+        <div class="cards four-cols">
+          <article class="card reveal">
+            <span class="card-icon">✦</span>
+            <h3 data-i18n="who.card1.title">Designers & illustrators</h3>
+            <p data-i18n="who.card1.text">For creators selling graphics, templates, fonts, digital assets and visual products.</p>
+          </article>
+          <article class="card reveal delay-1">
+            <span class="card-icon">◉</span>
+            <h3 data-i18n="who.card2.title">Photographers & stock contributors</h3>
+            <p data-i18n="who.card2.text">For contributors receiving royalties or payouts from stock photo and media platforms.</p>
+          </article>
+          <article class="card reveal delay-2">
+            <span class="card-icon">⬡</span>
+            <h3 data-i18n="who.card3.title">3D artists & game asset creators</h3>
+            <p data-i18n="who.card3.text">For creators selling 3D models, plugins, textures, game assets and marketplace products.</p>
+          </article>
+          <article class="card reveal delay-3">
+            <span class="card-icon">↯</span>
+            <h3 data-i18n="who.card4.title">Freelancers & digital sellers</h3>
+            <p data-i18n="who.card4.text">For people earning from freelance platforms, subscriptions, courses, music, content or digital products.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad muted-section" id="helps">
+      <div class="container split-grid">
+        <div class="section-head sticky-copy reveal">
+          <span class="section-kicker" data-i18n="helps.kicker">What Garna helps with</span>
+          <h2 data-i18n="helps.title">One account for creator payouts</h2>
+          <p data-i18n="helps.text">A guided way to connect platform payouts, receive funds to your Garna balance and withdraw using available payout methods.</p>
+        </div>
+
+        <div class="feature-stack">
+          <article class="feature-row reveal">
+            <span>01</span>
+            <div>
+              <h3 data-i18n="helps.f1.title">Receive platform payouts</h3>
+              <p data-i18n="helps.f1.text">Use Garna details where supported to receive payments from international creator platforms.</p>
+            </div>
+          </article>
+          <article class="feature-row reveal">
+            <span>02</span>
+            <div>
+              <h3 data-i18n="helps.f2.title">Get guided setup</h3>
+              <p data-i18n="helps.f2.text">Tell us which platform you use. We’ll check the available payout method and guide you through the setup.</p>
+            </div>
+          </article>
+          <article class="feature-row reveal">
+            <span>03</span>
+            <div>
+              <h3 data-i18n="helps.f3.title">Manage your balance</h3>
+              <p data-i18n="helps.f3.text">Once funds arrive, they are credited to your Garna balance after verification and matching with your invoice.</p>
+            </div>
+          </article>
+          <article class="feature-row reveal">
+            <span>04</span>
+            <div>
+              <h3 data-i18n="helps.f4.title">Withdraw globally</h3>
+              <p data-i18n="helps.f4.text">Withdraw your money using available payout methods such as bank transfer, card, PayPal, Payoneer, crypto and other supported options.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="how">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="section-kicker" data-i18n="how.kicker">How it works</span>
+          <h2 data-i18n="how.title">From platform payout to your Garna balance</h2>
+          <p data-i18n="how.text">The flow is simple, but setup may differ by platform. During Early Access, we guide you through the important details.</p>
+        </div>
+
+        <div class="steps">
+          <article class="step-card reveal">
+            <span>1</span>
+            <h3 data-i18n="how.s1.title">Create your Garna account</h3>
+            <p data-i18n="how.s1.text">Register in Garna and complete verification. KYC usually takes 1–2 business days.</p>
+          </article>
+          <article class="step-card reveal delay-1">
+            <span>2</span>
+            <h3 data-i18n="how.s2.title">Tell us your platform</h3>
+            <p data-i18n="how.s2.text">Contact your payout manager and tell us where you receive income.</p>
+          </article>
+          <article class="step-card reveal delay-2">
+            <span>3</span>
+            <h3 data-i18n="how.s3.title">Get setup instructions</h3>
+            <p data-i18n="how.s3.text">We’ll check the available payout method and provide the correct Garna details or next steps.</p>
+          </article>
+          <article class="step-card reveal">
+            <span>4</span>
+            <h3 data-i18n="how.s4.title">Request payout on the platform</h3>
+            <p data-i18n="how.s4.text">Add the provided details where supported and request a withdrawal from your platform.</p>
+          </article>
+          <article class="step-card reveal delay-1">
+            <span>5</span>
+            <h3 data-i18n="how.s5.title">Create an invoice in Garna</h3>
+            <p data-i18n="how.s5.text">Create an invoice and attach the required confirmation, such as a payout screenshot or platform document.</p>
+          </article>
+          <article class="step-card reveal delay-2 accent-step">
+            <span>6</span>
+            <h3 data-i18n="how.s6.title">Receive and withdraw funds</h3>
+            <p data-i18n="how.s6.text">Garna matches the payment with your invoice, credits your balance, and you withdraw using your preferred available method.</p>
+          </article>
+        </div>
+        <p class="section-note reveal" data-i18n="how.note">Platform processing time usually depends on the platform itself. In many cases, incoming funds may take 1–5 business days.</p>
+      </div>
+    </section>
+
+    <section class="section-pad compact" id="fees">
+      <div class="container fee-grid">
+        <div class="fee-card reveal">
+          <span class="section-kicker" data-i18n="fees.kicker">Early Access fee</span>
+          <h2 data-i18n="fees.title">Reduced fee for Early Access creators</h2>
+          <p data-i18n="fees.text">We’re opening creator payouts in Early Access and manually helping selected users configure their first platform setups.</p>
+          <div class="fee-actions">
+            <a class="btn btn-primary" href="https://t.me/likelyIam" target="_blank" rel="noopener" data-i18n="cta.manager">Contact Payout Manager</a>
+          </div>
+        </div>
+
+        <div class="price-card reveal delay-1">
+          <div class="price-row old-price">
+            <span data-i18n="fees.standard">Standard fee</span>
+            <strong>4%</strong>
+          </div>
+          <div class="price-row new-price">
+            <span data-i18n="fees.early">Early Access fee</span>
+            <strong>1.5%</strong>
+          </div>
+          <p data-i18n="fees.caption">Early Access creators can receive a reduced 1.5% fee for their first payouts while we help validate and fine-tune the setup flow.</p>
+          <small data-i18n="fees.disclaimer">Final fee terms may depend on the platform, payout method and individual setup.</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="platforms">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="section-kicker" data-i18n="platforms.kicker">Platforms</span>
+          <h2 data-i18n="platforms.title">Popular platforms we can help with</h2>
+          <p data-i18n="platforms.text">We’re starting with popular creator platforms, stock marketplaces and digital product services. Some platforms can be configured directly, while others may require manual guidance from Garna or the platform’s own support team.</p>
+        </div>
+
+        <div class="platform-grid reveal" aria-label="Popular platforms">
+          <div class="platform-pill">Shutterstock</div>
+          <div class="platform-pill">Adobe Stock</div>
+          <div class="platform-pill">Freepik</div>
+          <div class="platform-pill">Canva</div>
+          <div class="platform-pill">Envato</div>
+          <div class="platform-pill">Creative Market</div>
+          <div class="platform-pill">Gumroad</div>
+          <div class="platform-pill">Redbubble</div>
+          <div class="platform-pill">Patreon</div>
+          <div class="platform-pill">Fiverr</div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="ticker-intro reveal">
+          <span class="section-kicker" data-i18n="platforms.moreKicker">More payout sources</span>
+          <p data-i18n="platforms.moreText">We can also review additional platforms and payout methods during Early Access. The exact setup depends on each platform’s rules and available payout options.</p>
+        </div>
+      </div>
+
+      <div class="ticker-wrap reveal" aria-hidden="true">
+        <div class="ticker-track" id="platformTicker"></div>
+      </div>
+    </section>
+
+    <section class="section-pad muted-section" id="why">
+      <div class="container">
+        <div class="section-head centered reveal">
+          <span class="section-kicker" data-i18n="why.kicker">Why Garna</span>
+          <h2 data-i18n="why.title">Global payout infrastructure for modern teams and creators</h2>
+          <p data-i18n="why.text">Garna already helps businesses and contractors work with international payouts. Now we’re bringing the same payout infrastructure to creators who earn from global platforms.</p>
+        </div>
+
+        <div class="trust-grid">
+          <article class="trust-card reveal">
+            <strong>150+</strong>
+            <h3 data-i18n="why.t1.title">Global coverage</h3>
+            <p data-i18n="why.t1.text">Receive and withdraw funds across multiple countries, currencies and payout methods.</p>
+          </article>
+          <article class="trust-card reveal delay-1">
+            <strong>80+</strong>
+            <h3 data-i18n="why.t2.title">Currencies</h3>
+            <p data-i18n="why.t2.text">Work with multiple currencies and available payout directions through Garna.</p>
+          </article>
+          <article class="trust-card reveal delay-2">
+            <strong>24/7</strong>
+            <h3 data-i18n="why.t3.title">Guided onboarding</h3>
+            <p data-i18n="why.t3.text">A payout manager will help you understand what to do and which details to use.</p>
+          </article>
+          <article class="trust-card reveal delay-3">
+            <strong>✓</strong>
+            <h3 data-i18n="why.t4.title">Compliance-first approach</h3>
+            <p data-i18n="why.t4.text">Garna works with verification, invoices and payment documentation to keep the process structured.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad compact" id="manager">
+      <div class="container manager-card reveal">
+        <div>
+          <span class="section-kicker" data-i18n="manager.kicker">Personal manager</span>
+          <h2 data-i18n="manager.title">Need help with your first setup?</h2>
+          <p data-i18n="manager.text">Your payout manager will help you understand whether your platform is supported, which payout method is available, and what steps you need to complete.</p>
+          <div class="contact-lines">
+            <a href="https://t.me/likelyIam" target="_blank" rel="noopener">Telegram: @likelyIam</a>
+            <a href="mailto:rbl@garna.io">Email: rbl@garna.io</a>
+          </div>
+        </div>
+        <div class="manager-actions">
+          <a class="btn btn-primary" href="https://t.me/likelyIam" target="_blank" rel="noopener" data-i18n="manager.telegram">Message on Telegram</a>
+          <a class="btn btn-secondary" href="mailto:rbl@garna.io" data-i18n="manager.email">Send an email</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="faq">
+      <div class="container faq-grid">
+        <div class="section-head reveal">
+          <span class="section-kicker" data-i18n="faq.kicker">FAQ</span>
+          <h2 data-i18n="faq.title">Questions creators usually ask</h2>
+          <p data-i18n="faq.text">A few important details before you start your first payout setup with Garna.</p>
+        </div>
+
+        <div class="faq-list reveal delay-1">
+          <div class="faq-item is-open">
+            <button class="faq-question" type="button" aria-expanded="true" data-i18n="faq.q1">Is Garna a creator platform?</button>
+            <div class="faq-answer"><p data-i18n="faq.a1">No. Garna is not a marketplace and does not sell your content. Garna helps creators receive payouts from international platforms and withdraw funds using available payout methods.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" data-i18n="faq.q2">Is this available for everyone?</button>
+            <div class="faq-answer"><p data-i18n="faq.a2">Creator payouts are currently available in Early Access. We start with selected creators and platforms to make sure each setup works correctly.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" data-i18n="faq.q3">Do I need to create a Garna account?</button>
+            <div class="faq-answer"><p data-i18n="faq.a3">Yes. You need a Garna account to complete verification, create invoices, receive funds and withdraw your balance.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" data-i18n="faq.q4">How long does verification take?</button>
+            <div class="faq-answer"><p data-i18n="faq.a4">KYC usually takes 1–2 business days, depending on the documents and verification flow.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" data-i18n="faq.q5">How long does it take to receive funds from a platform?</button>
+            <div class="faq-answer"><p data-i18n="faq.a5">It depends on the platform and payout method. In many cases, incoming funds may take 1–5 business days after the platform sends the payout.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" data-i18n="faq.q6">How long does withdrawal from Garna take?</button>
+            <div class="faq-answer"><p data-i18n="faq.a6">Withdrawal timing depends on the selected method and destination. As a general guideline, it may take 1–2 business days for many standard methods.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" data-i18n="faq.q7">Can I use Garna with any platform?</button>
+            <div class="faq-answer"><p data-i18n="faq.a7">Not always. Each platform has its own payout rules and supported methods. During setup, we confirm whether your platform can be processed and which flow applies.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question" type="button" aria-expanded="false" data-i18n="faq.q8">What is the fee?</button>
+            <div class="faq-answer"><p data-i18n="faq.a8">The standard fee is 4%. Early Access creators can receive a reduced 1.5% fee for their first payouts, subject to final confirmation and setup details.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-cta section-pad compact">
+      <div class="container final-card reveal">
+        <h2 data-i18n="final.title">Start receiving creator payouts with Garna</h2>
+        <p data-i18n="final.text">Create your Garna account or contact your payout manager to check your platform and get guided setup.</p>
+        <div class="hero-actions centered-actions">
+          <a class="btn btn-primary" href="https://app.garna.io/auth/sign-up" target="_blank" rel="noopener" data-i18n="cta.create">Create Garna Account</a>
+          <a class="btn btn-secondary" href="https://t.me/likelyIam" target="_blank" rel="noopener" data-i18n="cta.manager">Contact Payout Manager</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <a class="logo footer-logo" href="#top">garna</a>
+        <p data-i18n="footer.text">Creator payouts from global platforms, guided by Garna.</p>
+      </div>
+      <div>
+        <h3 data-i18n="footer.product">Product</h3>
+        <a href="#how" data-i18n="nav.how">How it works</a>
+        <a href="#platforms" data-i18n="nav.platforms">Platforms</a>
+        <a href="#fees" data-i18n="nav.fees">Fees</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </div>
+      <div>
+        <h3 data-i18n="footer.contact">Contact</h3>
+        <a href="https://t.me/likelyIam" target="_blank" rel="noopener">Telegram: @likelyIam</a>
+        <a href="mailto:rbl@garna.io">Email: rbl@garna.io</a>
+      </div>
+    </div>
+    <div class="container legal-row">
+      <p data-i18n="footer.legal">Garna is not a bank or financial institution. Financial technology services are provided through certified partners where applicable. Availability of payout methods, processing times and fees may depend on the user’s country, platform, verification status and selected withdrawal method.</p>
+      <span>© Garna. All rights reserved.</span>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
