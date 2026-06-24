@@ -25,3 +25,6 @@ Update v8: PDF version final green block includes Contact Payout Manager and Cre
 
 
 Version 9 notes: final green block uses contact links instead of CTA buttons; spacing tightened for PDF export.
+
+
+Update v11: PDF version intentionally has no header and no footer. It starts with the hero block and ends with the final green contact block.

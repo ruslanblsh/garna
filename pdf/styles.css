@@ -1768,3 +1768,27 @@ body.pdf-version .final-card {
     print-color-adjust: exact;
   }
 }
+
+
+/* PDF v11: no header/footer in the printable handout. */
+body.pdf-version .site-header,
+body.pdf-version .site-footer,
+body.pdf-version .legal-row {
+  display: none !important;
+}
+
+body.pdf-version .hero {
+  padding-top: 52px !important;
+}
+
+@media print {
+  body.pdf-version .site-header,
+  body.pdf-version .site-footer,
+  body.pdf-version .legal-row {
+    display: none !important;
+  }
+
+  body.pdf-version .hero {
+    padding-top: 42px !important;
+  }
+}
