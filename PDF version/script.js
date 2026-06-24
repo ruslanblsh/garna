@@ -296,8 +296,11 @@ const tickerPlatforms = [
 // ?lang=ru switches to Russian on first load.
 // ?mode=transition or ?ref=partner shows the soft transition banner.
 const params = new URLSearchParams(window.location.search);
+const isPdfVersion = document.body.classList.contains('pdf-version');
 
 function getInitialLang() {
+  // PDF version is intended as an English printable handout by default.
+  if (isPdfVersion) return 'en';
   const fromUrl = params.get('lang');
   if (fromUrl && i18n[fromUrl]) return fromUrl;
   const stored = localStorage.getItem('garnaCreatorsLang');
@@ -308,7 +311,7 @@ function getInitialLang() {
 function setLanguage(lang, updateUrl = true) {
   const dictionary = i18n[lang] || i18n.en;
   document.documentElement.lang = lang;
-  document.title = lang === 'ru' ? 'Garna for Creators – выплаты для креаторов' : 'Garna for Creators';
+  document.title = isPdfVersion ? 'Garna for Creators - PDF version' : (lang === 'ru' ? 'Garna for Creators – выплаты для креаторов' : 'Garna for Creators');
 
   document.querySelectorAll('[data-i18n]').forEach((node) => {
     const key = node.getAttribute('data-i18n');
@@ -341,7 +344,7 @@ function initTicker() {
   const ticker = document.getElementById('platformTicker');
   if (!ticker) return;
 
-  const items = [...tickerPlatforms, ...tickerPlatforms];
+  const items = isPdfVersion ? tickerPlatforms : [...tickerPlatforms, ...tickerPlatforms];
   ticker.innerHTML = items.map((name) => `<span class="ticker-item">${name}</span>`).join('');
 }
 
